@@ -67,12 +67,36 @@ fullstack-auth-app/
    npm install
    ```
 
-3. Create .env file with:
-   ```
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   PORT=5000
-   ```
+
+
+3.This project already includes a working MongoDB Atlas connection.
+You don’t need to change the .env file — just run it.
+
+PORT=5000
+MONGO_URI=mongodb+srv://Vidit:Vidit%40123@cluster0.biw23mt.mongodb.net/appointmentDB?retryWrites=true&w=majority
+JWT_SECRET=mysecretkey123
+NODE_ENV=development
+
+
+ Works for everyone since Atlas access is set to 0.0.0.0/0.
+
+Run backend:
+
+cd backend
+npm install
+npm run dev
+
+
+If it doesn’t connect, create your own .env with:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=mysecretkey123
+NODE_ENV=development
+
+
+and use your own MongoDB Atlas cluster (free at mongodb.com
+).
 
 4. Start the server:
    ```
