@@ -1,6 +1,6 @@
-# Full Stack Auth Application
+# Full Stack Doctor Appointment System 
 
-A complete authentication system built with React frontend and Node.js backend.
+A completeBooking system built with React frontend and Node.js backend.
 
 ## Features
 
